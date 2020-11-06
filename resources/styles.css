@@ -9,6 +9,7 @@
 html body {
     background-color: lightgrey;
     font-family: 'Merriweather', serif;
+    list-style-position: inside;
 }
 
 /* Styling för navigation bar */
@@ -82,6 +83,40 @@ button {
 
 
 /* DESIGN FÖR LIST-SIDAN */
+
+.bookList {
+    margin: 50px;
+}
+
+.bookList > ol > li:nth-child(2n) {
+    color: green;
+}
+
+/* Jag var inte säker på om det räckte med att ha varannan olik, men det jag hade löst ny färg på varje li så här: */
+/* 
+.bookList > ol > li:nth-child(1) {color: red;}
+.bookList > ol > li:nth-child(2) {color: orange;}
+.bookList > ol > li:nth-child(3) {color: yellow;}
+.bookList > ol > li:nth-child(4) {color: green;}
+.bookList > ol > li:nth-child(5) {color: blue;} */
+
+
+.membersList {
+    margin: 50px;
+    padding: 10px;
+}
+
+._1, ._3, ._5 {
+    background-color: lightgreen;
+}
+
+.membersList > ul > li {
+    margin-bottom: 20px;
+}
+
+.membersList > ul > li > ol > li {
+    list-style-type: upper-roman;
+}
 
 
 
