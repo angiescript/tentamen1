@@ -3,13 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/styles.css">
     <title>Startsida</title>
 </head>
 <body>
     <main>
-        <nav>
+
+        <!-- Välkommen till startsidan! Den är upplagd enligt följande:
+        1. Header med navigation bar
+        2. Rubrik 
+        3. Flexbox innehållande:
+         ---Välkomsttext
+         ---Formulär 
+        
+        Ha en bra dag! :) -->
+
+        <!-- 1. Header med navigation bar -->
+        <header>
+            <nav class="navBar">
+                <ul class="navBar__links">
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="lists.html">Listsida</a></li>
+                    <li><a href="grafik.html">Grafik</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        <!-- 2. Rubrik -->
+        <div class="intro">
+            <h1>Välkommen till startsidan!</h1>
+        </div>
+
+        <!-- 3. Flexbox -->
+        <div class="content">
+
+            <!-- Flexbox item: Välkomsttext -->
+            <div class="intro__text">
+                <h2>Kul att du hittat hit! <br>
+                    Här hittar du i princip enbart ett formulär.<br>
+                    Hoppas du får en fin dag!</h2>
+            </div>
             
-        </nav>
+            <!-- Flexbox item: Formulär -->
+            <div class="form">
+                <form action="#" method="get" autocomplete="off">
+                    <div class="allQuestions">
+                        <label for="name">Ditt namn:</label><br>
+                        <input type="text" name="name" placeholder="ex Namn Namnson"><br>
+            
+                        <label for="email">Din email:</label><br>
+                        <input type="email" name="email" placeholder="ex namn.namnson@gmail.com"><br>
+            
+                        <label for="phone">Ditt telefonnummer:</label><br>
+                        <input type="number" name="phone" placeholder="ex 0730225052"><br><br> 
+
+                        <button type="submit" name="submit">Skicka! </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+       
+
     </main>
 </body>
 </html>

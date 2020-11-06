@@ -1,0 +1,88 @@
+/* GENERELL STYLING FÖR SAMTLIGA HTML-FILER */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    background-color: lightgrey;
+    font-family: 'Merriweather', serif;
+}
+
+/* Styling för navigation bar */
+
+.navBar__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 50px;
+    background-color: grey;
+}
+
+.navBar__links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navBar__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navBar__links li a:visited {
+    color: white;
+}
+
+.navBar__links li a:hover {
+    color: green;
+}
+
+
+
+/* DESIGN FÖR INDEXSIDAN */
+
+/* För att centrera välkomsttexten samt formuläret har jag valt att lägga dem i en flexbox. */
+.content  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling för stycket Rubrik och Välkomsttext */
+
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+
+.intro__text {
+    text-align: center;
+    padding: 30px 0px;
+    max-width: 400px;
+    border: 2px solid black;
+}
+
+/* Styling för formuläret */
+
+.form {
+    width: 400px;
+    padding: 10px;
+    margin: 30px 0px;
+    border: 2px solid green;  
+}
+
+button {
+    padding: 5px;
+}
+
+
+
+/* DESIGN FÖR LIST-SIDAN */
+
+
+
+
