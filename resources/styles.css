@@ -104,6 +104,7 @@ button {
 .membersList {
     margin: 50px;
     padding: 10px;
+    max-width: 600px;
 }
 
 ._1, ._3, ._5 {
@@ -120,4 +121,149 @@ button {
 
 
 
+/* DESIGN FÖR GRAFIKSIDAN */
 
+.graficalContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* List design */
+
+.listHeading{
+    padding: 12px 16px;
+}
+
+.nestedList li  {
+    padding: 12px 16px;
+    list-style-type: none;
+}
+
+.dropDown {
+
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.dropDown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 300px;
+    cursor: default;
+    /* z-index: 1; */
+}
+    
+.dropDown-content li {
+    background-color: lightblue;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.5s ease 0s;
+}
+
+.dropDown-content li:hover {
+    background-color: pink;
+}
+
+.dropDown:hover .dropDown-content {
+    display: block;
+}
+
+
+/* Transition design */
+
+.transition {
+    margin: 30px;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    background-color: darkgreen;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.transition p {
+    padding-top: 40px;
+    color: white;
+}
+
+.transition:hover {
+    transform: scale(1.2);
+    background-color: lightseagreen;
+}
+
+.transition p:hover {
+    color: darkblue;
+}
+
+/* Bildens styling */
+.image img {
+    height: 300px;
+    margin: 20px;
+}
+
+/* Animation design */
+
+.animationBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 30px;
+    animation: move 7s ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes move {
+    0% {
+        background-color: white; 
+        left: 0px; 
+        top: 0px;
+        border-radius: 0 0 0 0;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background-color: green; 
+        left: 300px; 
+        top: 0px;
+        border-radius: 50% 0 0 0;
+        width: 150px;
+        height: 150px;
+    }
+    50% {
+        background-color: darkblue; 
+        left: 300px; 
+        top: 300px;
+        border-radius: 50% 50% 0 0;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background-color: violet; 
+        left:0px; 
+        top: 300px;
+        border-radius: 50% 50% 50% 0;
+        width: 150px;
+        height: 150px;
+    }
+    100% {
+        background-color: white; 
+        left: 0px; 
+        top: 0px;
+        border-radius: 50% 50% 50% 50%;
+        width: 200px;
+        height: 200px;
+    }
+}

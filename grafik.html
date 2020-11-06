@@ -9,6 +9,17 @@
 </head>
 <body>
     <main>
+
+        <!-- Välkommen till grafik-sidan! Den är upplagd enligt följande:
+        1. Header med navigation bar
+        2. Rubrik 
+        3. En nestlad lista där användaren ser den underordnade listan vid :hover
+        4. En knapp med transition-effekt
+        5. En bild
+        6. En animering
+         -->
+
+        <!-- 1. Header med navigation bar -->
         <header>
             <nav class="navBar">
                 <ul class="navBar__links">
@@ -18,6 +29,48 @@
                 </ul>
             </nav>
         </header>
+
+        <!-- 2. Rubrik -->
+        <div class="intro">
+            <h1>Välkommen till Grafiksidan!</h1>
+        </div>
+        
+        <div class="graficalContainer"> 
+
+            <!-- 3. Nested lista med hover-effekt -->
+            
+            <div class=list>
+                <h3 class="listHeading">Här är en helt meningslös lista:</h3>
+                <ul class="nestedList">
+                    <li>Punkt ett i listan</li>
+                            <li class="dropDown">Punkt två: Håll muspekaren över mig!
+                                <ul class="dropDown-content">
+                                    <li>Här är en sak</li>
+                                    <li>Här är en annan</li>
+                                    <li>...och en tredje</li>
+                                </ul>
+                            </li>
+                    <li>Punkt tre i listan</li>
+                    <li>Punkt fyra i listan</li>
+                </ul>
+            </div>
+
+            <!-- 4. En div med transition-effekt -->
+            <div class="transition">
+                <p>En text i en div!</p>
+            </div>
+
+            <!-- 5. En bild -->
+            <div class="image">
+                <img src="resources/img/vera.PNG" alt="Vår get Vera">
+            </div>
+        </div>
+        
+        <!-- 6. En animering --> 
+        <div class="animationBox">
+            <div class="animation"></div>
+        </div>   
+        
     </main>
 </body>
 </html>
